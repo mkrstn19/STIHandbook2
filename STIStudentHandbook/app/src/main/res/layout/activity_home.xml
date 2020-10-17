@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_logo" />
+
+    <ImageButton
+        android:id="@+id/calculatorImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@mipmap/ic_calculator" />
+
+    <ImageButton
+        android:id="@+id/historyImageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="@+id/calculatorImageButton"
+        app:layout_constraintStart_toEndOf="@+id/calculatorImageButton"
+        app:layout_constraintTop_toTopOf="@+id/calculatorImageButton"
+        app:srcCompat="@drawable/ic_history" />
+
+    <ImageButton
+        android:id="@+id/btnSTIHymn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:background="#CDDC39"
+        android:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="@+id/historyImageButton"
+        app:layout_constraintStart_toEndOf="@+id/historyImageButton"
+        app:layout_constraintTop_toTopOf="@+id/historyImageButton"
+        app:srcCompat="@drawable/ic_music" />
+</androidx.constraintlayout.widget.ConstraintLayout>
